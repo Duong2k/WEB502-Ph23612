@@ -36,18 +36,21 @@ const strArr = ["Hoa", "Duy", "Vu Anh"]
 
 // console.log(result, "we17305_map");
 
-const numberArr: number[] = [2, 4, 5, 6, 9, 12, 20, 35, 44]
-
-function bubbleSort<T>(array: T[]): T[] {
-    const len = array.length;
+const numberArr: number[] = [5, 4, 8, 14, 29, 11, 6, 9, 40]
+function sort<T>(arr: T[], compareFn: (a: T, b: T) => number): T[] {
+    const len = arr.length;
     for (let i = 0; i < len; i++) {
-        for (let j = 0; j < len - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                const tmp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = tmp;
+        for (let j = i + 1; j < len; j++) {
+            if (compareFn(arr[i], arr[j]) > 0) {
+                const temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
-    return array;
+    return arr;
 }
+const result = sort(numberArr, (a, b) => {
+    return b - a;
+})
+console.log(result);
