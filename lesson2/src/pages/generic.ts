@@ -49,7 +49,7 @@ function sort<T>(arr: T[], compareFn: (a: T, b: T) => number): T[] {
     return arr;
 }
 const result = sort(numberArr, (a, b) => {
-    return a - b;
+    return b - a;
 })
 console.log(result);
 
