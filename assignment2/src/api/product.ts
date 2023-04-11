@@ -11,6 +11,6 @@ export const getById = (id: string) => {
 }
 
 export const update = (id: string, body: UpdateForm) => {
-    const uri = "/product/" + id;
+    const uri = "/products/" + id;
     return instance.put(uri, body);
 }
