@@ -6,7 +6,7 @@ import DetailProduct from './pages/productDetail'
 import AdminLayout from './components/admin'
 import Dashboard from './pages/dashboard'
 import Signup from './pages/signup'
-import Signin from './pages/signIn'
+import Signin from './pages/signin'
 import ProductUpdate from './pages/productUpdate'
 
 
