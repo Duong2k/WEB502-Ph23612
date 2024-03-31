@@ -1,8 +1,0 @@
-Các chức năng em đã làm được trong asm2 là:
- Front-End:
-  -Trang Product
-  -Trang DetailProduct
- Back-End:
-  -Trang Admin
-  -Trang Đăng nhập / Đăng ký
-  -Update sản phẩm
